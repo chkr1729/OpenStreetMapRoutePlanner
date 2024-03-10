@@ -55,7 +55,6 @@ std::vector<RouteModel::Node> RoutePlanner::ConstructFinalPath(RouteModel::Node 
     distance = 0.0f;
     std::vector<RouteModel::Node> path_found;
 
-    // TODO: Implement your solution here.
     path_found.emplace_back(*current_node);
     while(current_node != start_node) {
         distance += current_node->parent->distance(*current_node);
@@ -70,7 +69,6 @@ std::vector<RouteModel::Node> RoutePlanner::ConstructFinalPath(RouteModel::Node 
 void RoutePlanner::AStarSearch() {
     RouteModel::Node *current_node = nullptr;
 
-    // TODO: Implement your solution here.
     AddNeighbors(current_node);
     while(current_node != end_node) {
         current_node = NextNode();

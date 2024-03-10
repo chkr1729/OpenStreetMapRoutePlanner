@@ -6,3 +6,6 @@ test.cpp
 build/
 bin/
 lib/
+.vscode/
+.DS_Store/
+.gitmodules/
